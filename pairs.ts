@@ -3,7 +3,7 @@ import { random } from "./random.ts";
 // separator "-", ".", ",", ":", "|", "\", "/", ">", "<", "@"
 type Separator = "-" | "_" | "|" | "/" | "." | ",";
 
-export const pair = (
+export const pairs = (
     a: string[],
     b: string[],
     separator: Separator = "-",

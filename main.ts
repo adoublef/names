@@ -4,9 +4,8 @@ import {
     predicates,
     teams,
 } from "./deps.ts";
-// import * as v from "https://esm.sh/valibot@0.13.1";
 import { redirect } from "./redirect.ts";
-import { pair } from "./pair.ts";
+import { pairs } from "./pairs.ts";
 
 const { serve } = Deno;
 
@@ -27,15 +26,15 @@ function handler(req: Request): Response {
 
 // predicate-objects
 function handleWords() {
-    return new Response(pair(predicates, objects), { status: 200 });
+    return new Response(pairs(predicates, objects));
 }
 // predicates-collections
 function handleCollections() {
-    return new Response(pair(predicates, collections), { status: 200 });
+    return new Response(pairs(predicates, collections));
 }
 // predicates-teams
 function handleTeams() {
-    return new Response(pair(predicates, teams), { status: 200 });
+    return new Response(pairs(predicates, teams));
 }
 
 // Learn more at https://deno.land/manual/examples/module_metadata#concepts
