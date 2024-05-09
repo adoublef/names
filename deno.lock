@@ -1,9 +1,14 @@
 {
-  "version": "2",
+  "version": "3",
+  "redirects": {
+    "https://esm.sh/v135/@types/friendly-words@~1/index.d.ts": "https://esm.sh/v135/@types/friendly-words@1.2.2/index.d.ts"
+  },
   "remote": {
     "https://esm.sh/friendly-words@1.2.3": "24c6e8707745ef88cbbeba99b1efabe33074f5527559a71988b59d5ae4674743",
+    "https://esm.sh/friendly-words@1.3.1": "f884d022ac0aaaaa0b261b89a0f853bcdf5aef02bbd9a44a3d9ccdc5cd9b8c61",
     "https://esm.sh/v131/friendly-words@1.2.3/denonext/friendly-words.mjs": "b31c283ed01c44458b39a650687b958e84b63cbb8787ad0773a09fd269f94248",
     "https://esm.sh/v131/valibot@0.13.1/denonext/valibot.mjs": "a034148aa0b00184fca7ce7c26e5f1c14670df0f8b05707df615688d89e49212",
+    "https://esm.sh/v135/friendly-words@1.3.1/denonext/friendly-words.mjs": "227420a565d36667885e4ee5624ee9100593d7a2a098c8660fcef6c8880e6497",
     "https://esm.sh/valibot@0.13.1": "2d805aeef2fcde05de0156fce2c09715d215edfc5f8a630f703d585d6e429e85"
   }
 }
