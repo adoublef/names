@@ -1,6 +1,7 @@
 *
 !*.ts
+!deno.*
 
 # tests
 *_test.ts
-dev_deps
+dev_deps.ts

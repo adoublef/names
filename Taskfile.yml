@@ -1,0 +1,23 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task --list--all
+    silent: true
+
+  build:
+    cmds:
+      - docker stop names || true # Stop and remove container if exists
+      - docker rm names || true # Remove container if exists
+      - docker build -t adoublef/names:dev .
+    silent: true
+
+  run:
+    deps:
+      - build
+    cmds:
+      - docker run -d -p 8000:8000 --name=names adoublef/names:dev
+    silent: true
