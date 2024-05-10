@@ -1,12 +1,9 @@
 import { random } from './random.ts';
+import { Separator } from './separator.ts';
 
-// separator "-", ".", ",", ":", "|", "\", "/", ">", "<", "@"
-type Separator = '-' | '_' | '|' | '/' | '.' | ',';
-
-export const pairs = (
-  a: string[],
+export const pairs = (a: string[], separator: Separator = '-') =>
+(
   b: string[],
-  separator: Separator = '-',
 ) => {
   return [random(a), random(b)].join(separator);
 };
