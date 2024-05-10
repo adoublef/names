@@ -14,7 +14,7 @@ Returns a random pair of words.
 
 **Query Parameters:**
 
-- `separators`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
+- `separator`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
 
 ### GET /words
 
@@ -22,7 +22,7 @@ Returns a random pair of words.
 
 **Query Parameters:**
 
-- `separators`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
+- `separator`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
 
 ### GET /collections
 
@@ -30,7 +30,7 @@ Returns a pair of words synonymous with 'collection'.
 
 **Query Parameters:**
 
-- `separators`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
+- `separator`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
 
 ### GET /teams
 
@@ -38,7 +38,7 @@ Returns a pair of words synonymous with 'team'.
 
 **Query Parameters:**
 
-- `separators`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
+- `separator`: Optional. Specifies the separator type for the words. Possible values: 'hyphen', 'underscore', 'period'.
 
 ## Architecture
 
