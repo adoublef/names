@@ -1,2 +1,6 @@
 *
 !*.ts
+
+# tests
+*_test.ts
+dev_deps
