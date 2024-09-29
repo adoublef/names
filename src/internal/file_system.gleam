@@ -36,13 +36,3 @@ pub fn to_iterator(
   }
   file_stream.read_line(stream) |> iterator.unfold(yield)
 }
-
-pub fn with_file_stream_iterator(
-  path: String,
-  // why not just return the right error here?
-  with handle_iterator: fn(Iterator(Result(String, FileStreamError))) -> a,
-) -> Result(a, Nil) {
-  // cannot replace the result so not really a viable idea
-  with_file_stream(path, fn(stream) { handle_iterator(stream |> to_iterator) })
-  |> result.replace_error(Nil)
-}
