@@ -1,0 +1,25 @@
+# fly.toml app configuration file generated for names-falling-frost-5911 on 2024-09-29T22:35:14+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'names-falling-frost-5911'
+primary_region = 'lhr'
+
+[build]
+
+[processes]
+app = 'run serve'
+
+[http_service]
+internal_port = 8000
+force_https = true
+auto_stop_machines = 'stop'
+auto_start_machines = true
+min_machines_running = 0
+processes = ['app']
+
+[[vm]]
+memory = '1gb'
+cpu_kind = 'shared'
+cpus = 1
