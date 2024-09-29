@@ -1,0 +1,17 @@
+networks:
+  intranet:
+
+services:
+  names:
+    container_name: names
+    image: adoublef/names:0.1
+    build:
+      context: .
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    platform: linux/amd64
+    networks:
+      - intranet
+    ports:
+      - 8000:8000

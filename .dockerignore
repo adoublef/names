@@ -1,0 +1,5 @@
+*
+!priv
+!src
+!test
+!*.toml

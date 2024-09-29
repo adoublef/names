@@ -71,6 +71,8 @@ fn handle_words(req: Request, ctx: Context, word: String) -> Response {
           x <> "-" <> y
         }
       }
+      // errors actually go back to the callback
+      // see if this is ok
       _, _ -> []
     }
   }
