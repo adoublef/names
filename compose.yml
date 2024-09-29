@@ -10,6 +10,7 @@ services:
       platforms:
         - linux/amd64
         - linux/arm64
+    command: ["run", "serve"]
     platform: linux/amd64
     networks:
       - intranet
